@@ -1,0 +1,217 @@
+/* Estilos Generales */
+
+body {
+    color: rgb(62, 62, 196);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 600px;
+}
+
+header,
+footer,
+aside,
+section,
+nav {
+    border-radius: 15px;
+}
+
+section,
+aside {
+    background-color: rgb(179, 124, 22);
+}
+
+header,
+footer,
+nav {
+    background-color: rgb(179, 124, 22);
+}
+
+h1 {
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+button {
+    text-decoration: none;
+    color: #006064;
+}
+
+button {
+    border-radius: 5px;
+    background-color: white;
+    padding: 3px;
+}
+
+.redes {
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+aside {
+    width: auto;
+}
+
+aside ul li {
+    padding: 2px;
+    margin-left: -20px;
+}
+
+header {
+    padding: 30px;
+}
+
+nav ul a {
+    padding: 10px;
+}
+
+nav ul {
+    margin-left: -20px;
+}
+
+article {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+section {
+    padding: 20px;
+}
+
+.item {
+    background-color: #006064;
+    color: white;
+}
+
+.lado1 {
+    display: flex;
+    align-items: center;
+}
+
+header, nav, footer {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items:center  ;
+}
+ 
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    grid-area: section;
+    column-gap: 15px;
+    row-gap: 15px;
+} 
+
+aside {
+    grid-area: aside;
+    display: flex;
+    width: auto;
+}
+
+#main, section {
+    display: grid;
+}
+
+#main {
+column-gap: 10px;
+row-gap: 10px;
+}
+
+@media screen and (min-width: 320px) {
+    #main{
+    display: flow-root;
+    grid-template-columns: auto auto;
+    grid-template-rows: 15% 10% auto 15%;
+    grid-template-areas: "header" "nav" " section" "footer";
+    float: none;
+    width: 100%
+}
+
+#ulNav
+#inputHeader {
+    display: none;
+}
+
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    float: none;
+    width: 100%
+}
+
+@media screen and (min-width: 1200px) {
+    #main{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 2fr 2fr 3fr 3fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+        float: none;
+        width: 100%
+    }
+    
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        float: none;
+        width: 100%
+    }
+
+#ulNav, #lado1
+{
+    float: none;
+    width: 100%
+}
+#inputNav{
+    float: none;
+    width: 100%
+
+}
+
+}
