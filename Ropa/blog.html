@@ -1,43 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 
 </head>
-<body>
-    <div class="container">
-        <nav>
-            <header>
-                <h1>Tienda Ropa M&G</h1>
-                <ul>
-                    <li><a href="index.html">Inicio</a> </li>
-                    <li><a href="ropaenlinea.html">Ropa en linea</a> </li>
-                    <li><a href="comofunciona.html">¿Como Funciona?</a> </li>
-                    <li><a href="blog.html">Blog</a> </li>
-                    <li><a href="contacto.html">Contacto</a> </li>
-                    </header>
-         
-        </ul>
-    </nav>
-    <div class="image-container"></div>
-    
-    <p>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Id quas hic animi! Nesciunt vel, voluptatem vitae,
-         non error omnis officiis exercitationem ipsa expedita
-          illo labore, fugit unde blanditiis ut distinctio.
-    </p>
 
+<body class="Main">
+    <header id="link">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <nav class="navbar navbar-default">
+
+                            <div class="col-12 col-md-2">
+                                <a class="navbar-brand">Tienda G&A</a>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="active"><a href="Index.html">Inicio</a> </li>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="active"><a href="ropaenlinea.html">Ropa en linea</a> </li>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="active"><a href="comofunciona.html">¿Como Funciona?</a> </li>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="active"><a href="blog.html">Blog</a> </li>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="actives"><a href="contacto.html">Contacto</a> </li>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <aside>
+        <div class="row">
+            <div class="col-sm-12 col-md-2 ">
+                <p>
+                    <h2>Archivo del Blog</h2>
+                </p>
+                <br>
+                <li><a href="#">Enero</a> </li>
+                <li><a href="#">Febrero</a> </li>
+                <li><a href="#">Marzo</a> </li>
+                <li><a href="#">Abril</a> </li>
+                <li><a href="#">Mayo</a> </li>
+                <li><a href="#">Junio</a> </li>
+                <li><a href="#">Julio</a> </li>
+                <li><a href="#">Agosto</a> </li>
+                <li><a href="#">Septiembre</a> </li>
+                <br>
+                <br>
+                    <fieldset>
+                    <label for="corre0">Correo:</label>
+                    <br>
+                    <input type="text" name="correo" placeholder="correo">
+                    <br>
+                    <label for="contrasena">Contraseña:</label>
+                    <br>
+                    <input type="password" name="contrasena" placeholder="contraseña">
+                    <br>
+                    <label for="suscripcion">Deseas recibir correos</label>
+                    <select name="suscripcion" id="suscripcion">
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br>
+                    <input type="submit" name="enviar" value="Enviar">
+                </fieldset>
+            </div>
+        
+            <div class="col-sm-12 col-md-10">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <article style="display: inherit">
+                            <table border="1" cellpadding="3" cellspacing="5">
+                                <th>Estilos de ropa</th>
+                                <th>marcas de ropa</th>
+                                <th>impacto a la naturaleza</th>
+                                <tr>
+                                    <td>boho </td>
+                                    <td>casual</td>
+                                    <td>Fancy</td>
+                                </tr>
+                                <tr>
+                                    <td>Alto</td>
+                                    <td>Medio</td>
+                                    <td>Bajo</td>
+                                </tr>
+                                <tr>
+                                    <td>Shein</td>
+                                    <td>Nike</td>
+                                    <td>Aldo Conti</td>
+                                </tr>
+                            </table>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <article>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptatem tempora in fuga cumque saepe ea similique culpa recusandae illo deserunt dolorem cupiditate excepturi sit reprehenderit? Inventore nesciunt praesentium incidunt?
+                        </article>
+                    </div>
+                   
+    </aside>
+    <br>
     <footer>
-        <ul>
-            <li><a href="https://es-la.facebook.com">Facebook</a></li>
-            <li><a href="http://www.instagram.com">Instagram</a></li>
-        </ul>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <ul>
+                    <a href="https://es-la.facebook.com"class="fa fa-facebook">Facebook</a>
+                    <a href="http://www.instagram.com" class="fa fa-instagram"> Instagram</a>
+                
+                </ul>
+
+            </div>
     </footer>
-</div>
+
 </body>
+
 </html>

@@ -1,45 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
 </head>
-<body> 
-<div class="container">
-<nav>
-<header> <h1>Tienda Ropa M&G</h1> 
-    <ul>
-        <li><a href="Index.html">Inicio</a> </li>
-        <li><a href="ropaenlinea.html">Ropa en linea</a> </li>
-        <li><a href="comofunciona.html">¿Como Funciona?</a> </li>
-        <li><a href="blog.html">blog</a> </li>
-        <li><a href="contacto.html">Contacto</a> </li>
-    </ul>
-</header>
 
-            
-    </nav>
-    <div class="image-container">
-    </div>
-</header>
-                
-   
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Voluptas ipsum aperiam qui doloremque provident laborum totam vero. 
-        Ex sapiente adipisci aliquam mollitia ab harum sunt perspiciatis commodi, 
-        animi sint unde.
-    </p>
+<body class="Main">
+    <header id="link">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <nav class="navbar navbar-default">
 
+                            <div class="col-12 col-md-2">
+                                <a class="navbar-brand">Tienda G&A</a>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="active"><a href="Index.html">Inicio</a> </li>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="active"><a href="ropaenlinea.html">Ropa en linea</a> </li>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="active"><a href="comofunciona.html">¿Como Funciona?</a> </li>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="active"><a href="blog.html">Blog</a> </li>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <li class="actives"><a href="contacto.html">Contacto</a> </li>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <aside>
+        <div class="row">
+            <div class="col-sm-12 col-md-2 ">
+                <br>
+                    <fieldset>
+                    <label for="corre0">Correo:</label>
+                    <br>
+                    <input type="text" name="correo" placeholder="correo">
+                    <br>
+                    <label for="contrasena">Contraseña:</label>
+                    <br>
+                    <input type="password" name="contrasena" placeholder="contraseña">
+                    <br>
+                    <label for="suscripcion">Deseas recibir correos</label>
+                    <select name="suscripcion" id="suscripcion">
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br>
+                    <input type="submit" name="enviar" value="Enviar">
+                </fieldset>
+            </div>
+        
+            <div class="col-sm-12 col-md-10">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <article id="texto">
+                            <img src="../Media/vestidos.jpg" id="imagen" />
+                            <h3>Vestidos</h3>
+                            <button>Comprar</button>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <article id="texto">
+                            <img src="../Media/blusas.jpg" id="imagen">
+                            <h3>Blusas</h3>
+                            <button>Comprar</button>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <article id="texto">
+
+                            <img src="../Media/pantalones.jpg" id="imagen">
+                            <h3>Pantalones</h3>
+                            <button>Comprar</button>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <article id="texto">
+                            <img src="../Media/accesorios.png" id="imagen">
+                            <h3>accesorios</h3>
+                            <button>Comprar</button>
+                        </article id="texto">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <article id="texto">
+                            <img src="../Media/ropa.png" id="imagen">
+                            <h3>Ofertas</h3>
+                            <button>Comprar</button>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+
+                        <article id="texto">
+                            <img src="../Media/tienda-ropa-tienda-ropa-perchas-tienda-boutique-moderna_1150-8886.webp"
+                                id="imagen">
+
+                            <h3>Pantalones</h3>
+                            <button>Comprar</button>
+                        </article>
+                    </div>
+                </div>
+    </aside>
+    <br>
     <footer>
-        <ul>
-            <li><a href="https://es-la.facebook.com">Facebook</a></li>
-            <li><a href="http://www.instagram.com">Instagram</a></li>
-        </ul>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <ul>
+                        <a href="https://es-la.facebook.com"class="fa fa-facebook">Facebook</a>
+                        <a href="http://www.instagram.com" class="fa fa-instagram"> Instagram</a>
+                
+                </ul>
+
+            </div>
     </footer>
-    </div>
+
 </body>
+
 </html>
